@@ -1,12 +1,12 @@
-# langchain-app
+﻿# langchain-app
 
-一个可直接开发、测试与打包的 Python 项目模板。
+A standard, mainstream Python project scaffold using the `src/` layout.
 
-## 环境要求
+## Requirements
 
 - Python 3.10+
 
-## 快速开始
+## Quick Start
 
 ```bash
 python -m venv .venv
@@ -15,31 +15,37 @@ python -m venv .venv
 pip install -e ".[dev]"
 ```
 
-## 运行
+## Run
 
 ```bash
-python main.py
-# 或
+python -m langchain_app
+# or
 langchain-app
 ```
 
-## 测试与检查
+## Test and Lint
 
 ```bash
 pytest
 ruff check .
 ```
 
-## 项目结构
+## Project Structure
 
 ```text
 .
+├─ .github/workflows/ci.yml
+├─ docs/
 ├─ src/
 │  └─ langchain_app/
 │     ├─ __init__.py
+│     ├─ __main__.py
 │     └─ cli.py
 ├─ tests/
 │  └─ test_cli.py
-├─ main.py
-└─ pyproject.toml
+├─ .editorconfig
+├─ .gitignore
+├─ LICENSE
+├─ pyproject.toml
+└─ README.md
 ```
