@@ -42,7 +42,8 @@ ruff check .
 │     ├─ __main__.py
 │     └─ cli.py
 ├─ tests/
-│  └─ test_cli.py
+│  └─ unit/
+│     └─ test_cli.py
 ├─ .editorconfig
 ├─ .gitignore
 ├─ LICENSE
